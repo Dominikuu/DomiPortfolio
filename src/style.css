@@ -135,6 +135,7 @@ html {
   color: white !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
+  font-weight: 600 !important;
 }
 
 .nav-link {
@@ -149,7 +150,7 @@ html {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 .navbar-nav .nav-item a {

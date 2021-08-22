@@ -26,15 +26,14 @@ const About1 = () => (
                   Hi Everyone, I am{" "}
                   <span className="purple">Dominique Chen </span>
                   from <span className="purple"> Taipei, Taiwan.</span>
-                  <br />I am a junior pursuing IMSC in Maths and Computing in
-                  BIT Mesra.
+                  <br />I am a web developer who is inclined to front-end.
                   <br />
                   <br />
                   Apart from coding, some other activities that I love to do!
                 </p>
                 <ul>
                   <li className="about-activity">
-                    <ImPointRight /> Playing Games
+                    <ImPointRight /> Playing Badminton
                   </li>
                   <li className="about-activity">
                     <ImPointRight /> Writting Tech Blogs

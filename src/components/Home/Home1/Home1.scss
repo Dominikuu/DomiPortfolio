@@ -18,13 +18,12 @@
 .home-section {
   position: relative;
   z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
-  background: #161415 url(../../../assets/img/about1-background.jpg) no-repeat
-    top center !important;
-  background-position: top center;
+  background-image: url(../../../assets/img/home1-background.jpg) !important;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  background-size: cover;
+  background-position: center center !important;
 }
 
 .home-content {

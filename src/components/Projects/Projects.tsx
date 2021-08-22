@@ -2,80 +2,87 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import Particle from "../Particle";
+import nebula from "../../assets/img/project_nebula.jpg";
+import tby from "../../assets/img/project_tby.jpg";
+import picoin from "../../assets/img/project_picoin.jpg";
+import urlshorten from "../../assets/img/project_urlshorten.jpg";
+import imganalysis from "../../assets/img/project_img_analysis.png";
+import ratelimit from "../../assets/img/project_rate_limit.png";
 import "./Projects.scss";
 
-const Projects = () => <div>Projects Component</div>;
-<Container fluid className="project-section">
-  <Particle />
-  <Container>
-    <h1 className="project-heading">
-      My Recent <strong className="purple">Works </strong>
-    </h1>
-    <p style={{ color: "white" }}>
-      Here are a few projects I've worked on recently.
-    </p>
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <Col md={4} className="project-card">
-        <ProjectCard
-          //   imgPath={chatify}
-          isBlog={false}
-          title="Chatify"
-          description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-          link="https://github.com/soumyajit4419/Chatify"
-        />
-      </Col>
+const Projects = () => (
+  <Container fluid className="project-section">
+    <Particle />
+    <Container>
+      <h1 className="project-heading">
+        My Recent <strong className="purple">Works </strong>
+      </h1>
+      <p style={{ color: "white" }}>
+        Here are a few projects I've worked on recently.
+      </p>
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={nebula}
+            isBlog={false}
+            title="Nebula"
+            description="A platform integrated with  switch, access point, and gateway makes it easy to manage network equipment."
+            link="https://nebula.zyxel.com/"
+          />
+        </Col>
 
-      <Col md={4} className="project-card">
-        <ProjectCard
-          //   imgPath={leaf}
-          isBlog={false}
-          title="Plant AI"
-          description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-          link="https://github.com/soumyajit4419/Plant_AI"
-        />
-      </Col>
+        <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={tby}
+            isBlog={false}
+            title="TradeBeyond"
+            description="TradeBeyond allows retailers, brands, suppliers and factories to introduce, source and match products with retail mood boards, ranges and themes, in a digital showroom. Home to thousands of validated suppliers, TradeBeyond is designed to extend innovation, source and bring products to market faster"
+            link="https://github.com/soumyajit4419/Plant_AI"
+          />
+        </Col>
 
-      <Col md={4} className="project-card">
-        <ProjectCard
-          //   imgPath={editor}
-          isBlog={false}
-          title="Editor.io"
-          description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-          link="https://github.com/soumyajit4419/Editor.io"
-        />
-      </Col>
+        <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={picoin}
+            isBlog={false}
+            title="PiCoin"
+            description="It is a mining web app which can make user get coins per second within a day and show users coin and remaining time. If user and friends are mining at the same time, both of them can get bonus coins separately.
 
-      <Col md={4} className="project-card">
-        <ProjectCard
-          //   imgPath={bitsOfCode}
-          isBlog={false}
-          title="Bits-0f-C0de"
-          description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-          link="https://github.com/soumyajit4419/Bits-0f-C0de"
-        />
-      </Col>
+            Techn stack: Angular, NodeJS, PostgreSQL, Docker, WebSocket, NgRx"
+            link="https://github.com/Dominikuu/PiCoinFE"
+          />
+        </Col>
 
-      <Col md={4} className="project-card">
-        <ProjectCard
-          //   imgPath={suicide}
-          isBlog={false}
-          title="Ai For Social Good"
-          description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-          link="https://github.com/soumyajit4419/AI_For_Social_Good"
-        />
-      </Col>
+        <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={urlshorten}
+            isBlog={false}
+            title="Url shortener"
+            description="It allows to reduce long links . Frondend is deployed on AWS S3, and Backend servers including API server, Redis, MongoDB are packaged as container and deployed on AWS EC2 instance. Tech stack: ReactJS, NodeJS, docker"
+            link="https://github.com/Dominikuu/url-shortener-gui"
+          />
+        </Col>
 
-      <Col md={4} className="project-card">
-        <ProjectCard
-          //   imgPath={emotion}
-          isBlog={false}
-          title="Face Recognition and Emotion Detection"
-          description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-          link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-        />
-      </Col>
-    </Row>
+        <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={imganalysis}
+            isBlog={false}
+            title="Image analysis of Protein electrophoresis"
+            description="A desktop app developed by Qt/C++ and OpenCV is used on analyzing protein electrophoresis . With image segmentation, molecular weigh can be measured."
+          />
+        </Col>
+
+        <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={ratelimit}
+            isBlog={false}
+            title="Rate limit"
+            description="Using JWT to implement member login system and record the amount of request and set limitation of  expired time and request amount."
+            link="https://github.com/Dominikuu/rate-limit"
+          />
+        </Col>
+      </Row>
+    </Container>
   </Container>
-</Container>;
+);
 export default Projects;
