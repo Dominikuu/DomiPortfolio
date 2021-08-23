@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Preloader from "components/preloader";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -30,8 +31,7 @@ function App() {
   );
   return (
     <Router basename={process.env.PUBLIC_URL + "/DomiPortfolio"}>
-      {isLocalhost}
-      {/* <Preloader load={load} /> */}
+      <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         {/* <ScrollToTop /> */}
@@ -41,7 +41,6 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
         </Switch>
-        {/* <Footer /> */}
       </div>
     </Router>
   );
